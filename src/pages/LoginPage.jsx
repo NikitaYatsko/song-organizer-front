@@ -1,4 +1,4 @@
-import {LoginForm} from "../../features/login/ui/LoginForm.jsx";
+import {LoginForm} from "../features/login/ui/LoginForm.jsx";
 
 export function LoginPage() {
     return (
