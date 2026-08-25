@@ -78,7 +78,7 @@ export function RegisterForm() {
                     </Button>
 
                     <p className="text-sm text-muted-foreground">
-                        Already have an account?{" "}
+                        Already have an account{" "}
                         <button
                             type="button"
                             className="font-medium text-foreground hover:underline"
