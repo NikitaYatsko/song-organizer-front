@@ -1,11 +1,17 @@
-import {AvatarBlock} from "@/widgets/header/ui/Avatar.jsx";
-
+import { AvatarMenu } from "./AvatarMenu.jsx";
+import { ThemeToggle } from "./ThemeToggler.jsx";
 
 export function Header() {
     return (
-        <header className="w-full h-[70px] bg-gray-200 flex items-center justify-between">
-            <AvatarBlock></AvatarBlock>
-            <AvatarBlock></AvatarBlock>
+        <header className="w-full h-[70px] border-b flex items-center justify-between px-6">
+            <div className="text-xl font-semibold">
+                SongOrganizer
+            </div>
+
+            <div className="flex items-center gap-3">
+                <ThemeToggle />
+                <AvatarMenu />
+            </div>
         </header>
     );
 }
