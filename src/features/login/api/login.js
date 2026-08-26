@@ -1,5 +1,5 @@
 export async function login(email, password) {
-    const response = await fetch("https://juristic-zain-unconvened.ngrok-free.dev/api/auth/login", {
+    const response = await fetch("/api/auth/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
