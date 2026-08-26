@@ -14,4 +14,14 @@ export default defineConfig({
             "@": path.resolve(__dirname, "./src"),
         },
     },
+
+    server: {
+        proxy: {
+            "/api": {
+                target: "https://juristic-zain-unconvened.ngrok-free.dev",
+                changeOrigin: true,
+                secure: false,
+            },
+        },
+    },
 });

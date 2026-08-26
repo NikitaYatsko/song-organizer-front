@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LoginPage } from "@/pages/LoginPage.jsx";
 import { MainPage } from "@/pages/MainPage.jsx";
 import {RegisterPage} from "@/pages/register/index.jsx";
+import { ProjectsPage } from "@/pages/ProjectsPage.jsx";
 import {ProfilePage} from "@/pages/profile/ProfilePage.jsx";
 
 export function AppRouter() {
@@ -11,7 +12,7 @@ export function AppRouter() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/me" element={<ProfilePage />} />
                 <Route path="/register" element={<RegisterPage />} />
-                <Route path="/" element={<MainPage/>} />
+                <Route path="/" element={<ProjectsPage />} />
             </Routes>
         </BrowserRouter>
     );
