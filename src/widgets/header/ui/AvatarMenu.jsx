@@ -14,7 +14,7 @@ const dropDownMenuItems = [
     {
         logo:<User />,
         text:"Profile",
-        route: "/profile",
+        route: "/me",
     },
     {
         logo:<Settings />,
