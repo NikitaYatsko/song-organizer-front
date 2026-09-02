@@ -12,7 +12,8 @@ export function AppRouter() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/me" element={<ProfilePage />} />
                 <Route path="/register" element={<RegisterPage />} />
-                <Route path="/" element={<ProjectsPage />} />
+                <Route path="/" element={<MainPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
             </Routes>
         </BrowserRouter>
     );

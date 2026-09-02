@@ -1,7 +1,9 @@
+import {API_BASE_URL} from "@/shared/api-base-url.js";
+
 export async function register({
                                    email, username, password, firstName, lastName,
                                }) {
-    const response = await fetch("https://juristic-zain-unconvened.ngrok-free.dev/api/auth/register", {
+    const response = await fetch(`${API_BASE_URL}/api/auth/register`, {
         method: "POST", headers: {
             "Content-Type": "application/json",
         }, body: JSON.stringify({

@@ -1,7 +1,8 @@
 import {tokenStorage} from "@/features/login/helper/token-storage.js";
+import {API_BASE_URL} from "@/shared/api-base-url.js";
 
 export async function login(email, password) {
-    const response = await fetch("/api/auth/login", {
+    const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

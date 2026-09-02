@@ -11,6 +11,12 @@ import {
 import { LogOut, Settings, User } from "lucide-react";
 
 const dropDownMenuItems = [
+
+    {
+        logo:<User />,
+        text:"My Projects",
+        route: "/projects",
+    },
     {
         logo:<User />,
         text:"Profile",
